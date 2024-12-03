@@ -10,7 +10,7 @@ export class Avatars {
   public_id: string;
 
   @Field()
-  url: string
+  url: string;
 
   @Field()
   userID: string;
@@ -30,6 +30,6 @@ export class User {
   @Field()
   password: string;
 
-  @Field(() => Avatars, { nullable: true})
+  @Field(() => Avatars, { nullable: true })
   avatar: Avatars | null;
 }
